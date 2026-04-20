@@ -1,0 +1,9 @@
+.body{
+    background-color: var(--blue-color);
+}
+
+.banner-main{
+    background-image: url("../../assets/images/banner.webp");
+   
+    
+}
