@@ -6,7 +6,7 @@ import img1 from "../../assets/images/center1.svg";
 
 const Center = () => {
   return (
-    <div className="center side-space section-space">
+    <div className=" side-space section-space">
       <div className="container-fluid">
 
         <div className="text-center center-top">

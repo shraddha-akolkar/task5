@@ -1,19 +1,30 @@
-import React from 'react'
+import React from "react";
 import "./Banner.css";
 
 const Banner = () => {
   return (
-    <section className='section-space side-space banner-main'>
-      <div className='banner'>
-        <h1 className='section-title'>Welcome To 
-          <span> Sahyadri </span>
-           Neurology Care</h1>
-           <p>Holistic Approach To Neurology Care.</p>
-           <button>Connect with Our Specialistts</button>
-      </div>
-    
-    </section>
-  )
-}
+    <section className="banner side-space">
+      <div className="container-fluid">
+        <div className="row align-items-center banner-row">
 
-export default Banner
+          <div className="left-section">
+            <div className="banner-content">
+              <h1>
+                Welcome To <span>Sahyadri</span>
+                <br />
+                Neurology Care
+              </h1>
+
+              <p>Holistic Approach To Neurology Care.</p>
+
+              <button>Connect with Our Specialists</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Banner;

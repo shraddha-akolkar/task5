@@ -1,9 +1,71 @@
-.body{
-    background-color: var(--blue-color);
+.banner {
+  min-height: 520px;
+
+  /* Background image */
+  background: 
+    url("../../assets/images/banner.webp") no-repeat right bottom,
+    linear-gradient(90deg, #eaf7ff 0%, #f8fcff 50%, #edf8ff 100%);
+
+  background-size: cover;
+ display: flex;
+  align-items: flex-end;   /* move content down */
+  padding-bottom: 60px;  
 }
 
-.banner-main{
-    background-image: url("../../assets/images/banner.webp");
-   
-    
+
+
+
+
+/* Fix layout */
+.banner .container-fluid {
+  width: 100%;
+}
+
+.banner .banner-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* LEFT SECTION FIX */
+.left-section {
+  width: 50%;              /* main fix */
+  display: flex;
+  align-items: center;     /* vertical center */
+}
+
+/* Optional: control text width for better look */
+.banner-content {
+  max-width: 520px;
+}
+
+/* Content */
+.banner-content h1 {
+  font-family: 'Figtree';
+  font-size:48px;
+  font-weight: 700;
+  line-height: 1.1;
+  
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+.banner-content span {
+  color: var(--red);
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.banner-content button {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-family: 'Figtree';
+  font-weight: 500;
 }
