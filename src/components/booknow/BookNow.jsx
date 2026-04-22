@@ -5,7 +5,7 @@ import Arrow from "../../assets/svg/Arrow";
 const BookNow = () => {
   return (
     <div className="booknow section-space side-space">
-      <div className="container-fluid ">
+      <div>
 
         <div className="text-center booknow-heading">
           <p>We Would Be Happy To Help You</p>

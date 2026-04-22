@@ -46,7 +46,7 @@ const Experts = () => {
 
   return (
     <section className="experts section-space side-space">
-      <div className="container-fluid ">
+      <div>
 
   
         <h2 className="section-title text-center mb-2">

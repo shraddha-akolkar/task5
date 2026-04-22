@@ -26,7 +26,7 @@ const data = [
 const Pillars = () => {
   return (
     <section className="pillars section-space  side-space">
-      <div className="container-fluid">
+      <div>
 
         <div className="text-center mb-5">
           <h2 className="section-title">

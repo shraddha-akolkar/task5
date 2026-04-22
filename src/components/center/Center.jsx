@@ -7,7 +7,7 @@ import img1 from "../../assets/images/center1.svg";
 const Center = () => {
   return (
     <section className="center section-space side-space">
-      <div className="container-fluid ">
+      <div>
 
         <div className="text-center center-top mb-5">
           <h2 className="section-title">

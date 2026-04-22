@@ -67,7 +67,7 @@ export default function FAQAccordion() {
 
   return (
     <section className="faq section-space side-space">
-      <div className="container-fluid ">
+      <div >
 
         <h2 className="section-title text-center mb-4">
           Frequently Asked <span>Questions</span>

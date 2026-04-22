@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/logo.webp";
-
+import Phone from "../../assets/svg/Phone";
+import Calender from "../../assets/svg/Calender";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,15 +18,14 @@ const Navbar = () => {
 
   return (
     <header className={`navbar-wrapper ${scrolled ? "navbar-sticky" : ""}`}>
-      <div className="container-fluid">
+      <div>
         <div className="row align-items-center ">
 
-          {/* Logo */}
+        
           <div className="col-8 col-lg-3">
             <img src={logo} alt="logo" className="nav-logo" />
           </div>
 
-          {/* Desktop Menu */}
           <div className="col-lg-5 d-none d-lg-block">
             <ul className="nav-menu">
               <li className="active">Appointment</li>
@@ -35,15 +35,15 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Desktop Buttons */}
+        
           <div className="col-lg-4 d-none d-lg-block">
             <div className="nav-actions">
-              <button className="book-btnn">Book Appointment</button>
-              <button className="call-btn">Call Now</button>
+              <button className="book-btnn"><Calender/>Book Appointment</button>
+              <button className="call-btn"><Phone /> Call Now</button>
             </div>
           </div>
 
-          {/* Hamburger — mobile only */}
+       
           <div className="col-4 d-lg-none d-flex justify-content-end">
             <button
               className={`hamburger ${menuOpen ? "open" : ""}`}
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+   
       <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""}`}>
         <ul className="mobile-nav-menu">
           <li className="active" onClick={() => setMenuOpen(false)}>Appointment</li>

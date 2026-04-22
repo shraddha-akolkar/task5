@@ -26,7 +26,7 @@ const Location = () => {
 
   return (
     <section className="location section-space side-space">
-  <div className="container-fluid ">
+  <div>
 
     <h2 className="section-title text-center mb-4">
       <span>Sahyadri</span> Neurology Care Locations

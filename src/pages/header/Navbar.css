@@ -1,4 +1,4 @@
-/* ─── DEFAULT (floating card at top) ──────────────────────────────────────── */
+
 .navbar-wrapper {
   position: fixed;
   top: 16px;
@@ -8,12 +8,12 @@
   max-width: 1320px;
 
   background: #f2f2f2;
-  border-radius: 14px;
+  border-radius: 9px;
   padding: 12px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
   z-index: 1000;
-  overflow: hidden; /* keeps mobile dropdown inside rounded card */
+  overflow: hidden; 
 
   transition:
     top 0.35s ease,
@@ -21,9 +21,11 @@
     border-radius 0.35s ease,
     box-shadow 0.35s ease,
     padding 0.35s ease;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* ─── SCROLLED (full-width sticky) ─────────────────────────────────────────── */
+
 .navbar-wrapper.navbar-sticky {
   top: 0;
   left: 0;
@@ -37,12 +39,12 @@
   padding-right: 80px;
 }
 
-/* ─── Logo ───────────────────────────────────────────────────────────────── */
+
 .nav-logo {
   height: 70px;
 }
 
-/* ─── Desktop Menu ───────────────────────────────────────────────────────── */
+
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -69,7 +71,7 @@
   color: var(--red, #d32f2f);
 }
 
-/* ─── Desktop Buttons ────────────────────────────────────────────────────── */
+
 .nav-actions {
   display: flex;
   justify-content: flex-end;
@@ -89,6 +91,9 @@
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
+.book-btnn svg {
+  display: none;
+}
 .book-btnn:hover {
   background: #fff;
   color: #1e88e5;
@@ -114,7 +119,7 @@
   border-color: #d32f2f;
 }
 
-/* ─── Hamburger Button ───────────────────────────────────────────────────── */
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -138,7 +143,7 @@
   transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
 }
 
-/* Animate to × when open */
+
 .hamburger.open span:nth-child(1) {
   transform: translateY(7.5px) rotate(45deg);
 }
@@ -150,7 +155,7 @@
   transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* ─── Mobile Dropdown ────────────────────────────────────────────────────── */
+
 .mobile-menu {
   max-height: 0;
   overflow: hidden;
@@ -184,7 +189,7 @@
 
 .mobile-nav-menu li:hover,
 .mobile-nav-menu li.active {
-  color: var(--red, #d32f2f);
+  color:  #d32f2f;
 }
 
 .mobile-nav-actions {
@@ -200,7 +205,9 @@
   border-radius: 8px;
 }
 
-/* ─── Responsive ─────────────────────────────────────────────────────────── */
+
+
+
 @media (max-width: 992px) {
   .navbar-wrapper {
     width: calc(100% - 80px);
@@ -211,6 +218,10 @@
       padding-left:20px;
   padding-right: 20px;
   }
+  .book-btnn svg {
+  height: 16px;
+  width: 16px;
+}
 }
 
 @media (max-width: 576px) {

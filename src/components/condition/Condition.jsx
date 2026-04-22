@@ -62,7 +62,7 @@ const Conditions = () => {
 
   return (
     <section className="conditions section-space side-space">
-      <div className="container-fluid ">
+      <div>
 
         <h2 className="section-title text-center mb-5">
           <span>Neurology</span> Conditions We Treat
