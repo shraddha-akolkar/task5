@@ -95,4 +95,7 @@ select.form-control {
   .input-fields .form-control {
     width: 100%;
   }
+  .booknow-heading p{
+    font-size: 20px;
+  }
 }

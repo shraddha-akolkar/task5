@@ -114,6 +114,8 @@
 
 
 @media (max-width: 768px) {
+
+  
   .nav-btn {
     display: flex;
     padding: 6px;
@@ -131,6 +133,34 @@
 
 
   .condition-card {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.swiper-slide-active .condition-card {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  overflow: hidden;
+}
+
+
+.swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide .condition-card {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
+}
+
+
+.overlay h4{
+  font-size: 18px;
+  font-family: 'Figtree';
+
+}
+}
+
+@media (max-width: 550px) {
+   .condition-card {
   position: relative;
   overflow: hidden;
   border-radius: 16px; 

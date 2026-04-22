@@ -37,7 +37,7 @@ const dataRight = [
 
 const Facilities = () => {
   return (
-    <section className="facilities  side-space">
+    <section className="facilities section-space side-space">
       <div >
 
       

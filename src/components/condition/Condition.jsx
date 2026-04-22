@@ -82,7 +82,7 @@ const Conditions = () => {
             slidesPerView={1}
             breakpoints={{
               576: { slidesPerView: 1 },
-              768: { slidesPerView: 1 },
+              768: { slidesPerView: 3 },
               992: { slidesPerView: 4 },
               1200: { slidesPerView: 5 },
             }}

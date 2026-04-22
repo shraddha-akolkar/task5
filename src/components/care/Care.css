@@ -63,7 +63,7 @@
 .card-box p {
   font-size: 14px;
   line-height: 1.6;
-  
+  font-family: "Figtree";
 }
 
 
@@ -125,7 +125,10 @@ font-weight: 700;
     row-gap: 8px !important;
     column-gap: 8px !important;
   }
+.sub{
+font-size: 15px;
 
+}
    .card-box {
     padding: 14px; /* ↓ from 20px */
   }

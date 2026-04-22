@@ -70,7 +70,7 @@
   margin: 0 auto;
   max-width: 100%;
 
-  margin-top: 20px; /* small push down if needed */
+  margin-top: 50px; /* small push down if needed */
 }
 
   .banner-content h1 {
@@ -80,9 +80,10 @@
   }
 
   .banner-content p {
-    font-size: 20px;
-    padding: 0;
-
+    font-size: 18px;
+    padding: 15px;
+  font-family: 'Figtree';
+ margin-bottom: 5px;
   }
 
   /* ✅ CENTER BUTTON (key fix) */
@@ -91,7 +92,23 @@
     margin: 0 auto;
     width: auto;
     padding: 10px 20px;
+   
   }
 }
 
+
+@media(max-width:550px){
+  .banner-content {
+  margin: 0 auto;
+  max-width: 100%;
+
+  margin-top: 20px; /* small push down if needed */
+}
+ .banner-content p {
+    font-size: 18px;
+    padding: 0;
+  font-family: 'Figtree';
+ margin-bottom: 5px;
+  }
+}
 

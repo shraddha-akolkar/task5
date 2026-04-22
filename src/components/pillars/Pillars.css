@@ -66,3 +66,14 @@
   opacity: 1;
   max-height: 200px;
 }
+
+
+
+@media (max-width: 768px) {
+
+.overlay h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+}

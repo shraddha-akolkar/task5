@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "./Qna.css";
-import Plus from "../../assets/svg/Plus";
-import Minus from "../../assets/svg/Minus";
-const faqs = [
+import FAQItem from "../common/FAQItem";
+const defaultFaqs = [
   { q: "Who needs a neurologist?", 
     a: "Individuals with neurological symptoms such as chronic headaches, seizures, dizziness, numbness, weakness, memory issues, or movement disorders may need a neurologist." },
 
@@ -41,36 +39,30 @@ const faqs = [
 
 ];
 
-function FAQItem({ faq }) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div className={`faq-item ${open ? "open" : ""}`}>
-      <button className="faq-question" onClick={() => setOpen(!open)}>
-        <p>{faq.q}</p>
-        <div className="faq-icon">  
-          {open ? <Minus/> : <Plus />}
-          </div>
-      </button>
-
-      <div className="faq-answer">
-        {faq.a}
-      </div>
-    </div>
-  );
-}
-
-export default function FAQAccordion() {
-  const mid = Math.ceil(faqs.length / 2);
-  const leftFaqs = faqs.slice(0, mid);
-  const rightFaqs = faqs.slice(mid);
+export default function FAQAccordion({
+  title = "Frequently Asked Questions",
+  items = defaultFaqs,
+}) {
+  const mid = Math.ceil(items.length / 2);
+  const leftFaqs = items.slice(0, mid);
+  const rightFaqs = items.slice(mid);
+  const hasQuestionsWord = title.includes("Questions");
+  const [titleBeforeQuestions = "", titleAfterQuestions = ""] = hasQuestionsWord
+    ? title.split("Questions")
+    : [title, ""];
 
   return (
     <section className="faq section-space side-space">
       <div >
 
         <h2 className="section-title text-center mb-4">
-          Frequently Asked <span>Questions</span>
+          {hasQuestionsWord ? (
+            <>
+              {titleBeforeQuestions} <span>Questions</span> {titleAfterQuestions}
+            </>
+          ) : (
+            title
+          )}
         </h2>
 
         <div>

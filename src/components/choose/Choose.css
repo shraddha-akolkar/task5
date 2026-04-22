@@ -105,3 +105,10 @@
     width: 100%;
   }
 }
+
+@media(max-width:768px){
+   .choose-list{
+    font-size: 15px;
+    font-family: "Figtree";
+   }
+}
