@@ -1,10 +1,9 @@
 import React from "react";
 import "./BookNow.css";
-import Arrow from "../../assets/svg/Arrow";
 
 const BookNow = () => {
   return (
-    <div className="booknow section-space side-space">
+    <div className="booknow section-space side-space" id="appointment">
       <div>
 
         <div className="text-center booknow-heading">
@@ -13,40 +12,30 @@ const BookNow = () => {
 
         <form>
 
-          <div className="row g-3">
+          <div className="input-fields">
 
-            <div className="col-lg-3">
-              <input type="text" placeholder="Full Name*" className="form-control" />
-            </div>
+            <input type="text" placeholder="Full Name*" className="form-control" />
 
-            <div className="col-lg-3">
-              <input type="number" placeholder="Contact Number*" className="form-control" />
-            </div>
+            <input type="number" placeholder="Contact Number*" className="form-control" />
 
-            <div className="col-lg-3">
-              <select className="form-control">
-                <option>Nashik</option>
-                <option>Pune</option>
-              </select>
-            </div>
+            <select className="form-control">
+              <option>Select Location</option>
+              <option>Nashik</option>
+              <option>Pune</option>
+            </select>
 
-            <div className="col-lg-3">
-              <select className="form-control">
-              
-
-                <option>Dr. Shripal Shah</option>
-                <option>Dr. ABC</option>
-              </select>
-            </div>
+            <select className="form-control">
+              <option>Select Doctor</option>
+              <option>Dr. Shripal Shah</option>
+              <option>Dr. ABC</option>
+            </select>
 
           </div>
 
-          <div className="row mt-3">
-            <div className="col-12 text-center">
-              <button type="button" className="book-btn">
-                Book A Consultation Now
-              </button>
-            </div>
+          <div className="text-center mt-4">
+            <button type="button" className="book-btn">
+              Book A Consultation Now
+            </button>
           </div>
 
         </form>

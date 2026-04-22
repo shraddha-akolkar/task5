@@ -38,10 +38,10 @@ const dataRight = [
 const Facilities = () => {
   return (
     <section className="facilities  side-space">
-      <div className="container-fluid ">
+      <div >
 
       
-        <h2 className="section-title text-center mb-5">
+        <h2 className="section-title text-center">
           <span>Neurology treatments</span> facilities
         </h2>
 

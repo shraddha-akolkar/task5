@@ -3,23 +3,14 @@
 }
 
 
-.faq-grid {
-  display: flex;
-  gap: 30px;
-}
 
-.faq-col {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
 
 .faq-item {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
+    margin-bottom: 14px;
 }
 
 
@@ -72,12 +63,11 @@
 
 
 @media (max-width: 768px) {
-  .faq-grid {
-    flex-direction: column; 
-  }
-
+ 
   .faq-question p {
-    font-size: 15px;
+    font-size: 14px;
+   font-family: 'Figtree';
+  font-weight: 500;
   }
 
   .faq-answer {

@@ -28,10 +28,10 @@ const Navbar = () => {
 
           <div className="col-lg-5 d-none d-lg-block">
             <ul className="nav-menu">
-              <li className="active">Appointment</li>
-              <li>Treatments</li>
-              <li>Doctors</li>
-              <li>Why Us?</li>
+              <li className="active" href="#appointment">Appointment</li>
+              <li href="#treatments">Treatments</li>
+              <li href="#doctors">Doctors</li>
+              <li href="#why-us">Why Us?</li>
             </ul>
           </div>
 

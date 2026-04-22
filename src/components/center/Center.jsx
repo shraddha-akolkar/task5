@@ -9,7 +9,7 @@ const Center = () => {
     <section className="center section-space side-space">
       <div>
 
-        <div className="text-center center-top mb-5">
+        <div className="text-center center-top">
           <h2 className="section-title">
             Center At <span>Glance</span>
           </h2>

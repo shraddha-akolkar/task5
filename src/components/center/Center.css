@@ -8,7 +8,10 @@
 
 .center-desc {
   max-width: 750px;
-  margin: 10px auto 0;
+  font-family: 'Figtree';
+font-size: 15px;
+  padding: 0px 0px 20px 0;
+ margin: 0 auto;
   color: #242424;;
   line-height: 1.6;
 }
@@ -21,8 +24,8 @@
 
 .center-item h4 {
   font-size: 18px;
-  font-weight: 600;
-  line-height: 1.4;
+  font-weight: 700;
+  /* line-height: 1.4; */
   /* text-align: left; */
 }
 

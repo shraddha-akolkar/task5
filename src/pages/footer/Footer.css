@@ -23,3 +23,12 @@ font-weight: 400;
   color: #fff;
 }
 
+
+@media (max-width: 768px) {
+ 
+
+  .footer-left,
+  .footer-right a {
+    font-size: 14px;
+  }
+}

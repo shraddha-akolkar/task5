@@ -79,6 +79,15 @@
   .nav-btn.right {
     right: 0;
   }
+
+  .location-card{
+    width: 250px;
+  
+  }
+
+  .location-card img {
+    height: 180px !important;
+  }
 }
 
 @media (max-width: 768px) {

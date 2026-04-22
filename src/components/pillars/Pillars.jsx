@@ -28,13 +28,13 @@ const Pillars = () => {
     <section className="pillars section-space  side-space">
       <div>
 
-        <div className="text-center mb-5">
+        <div className="text-center">
           <h2 className="section-title">
             3 Pillars Of <span>Neurology Care</span> Under 1 Roof
           </h2>
         </div>
 
-        <div className="row g-4">
+        <div className="row  ">
           {data.map((item, i) => (
             <div className="col-12 col-md-6 col-lg-4" key={i}>
               <div className="pillar-card">

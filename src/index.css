@@ -87,21 +87,12 @@ span {
 
 @media (max-width: 1024px) {
   .side-space {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
-@media (max-width: 767px) {
-  .side-space {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
-  .section-title {
-    font-size: 24px;
-  }
-}
 
 @media (max-width: 992px) {
   .side-space {
@@ -115,6 +106,18 @@ span {
 }
 
 
+@media (max-width: 767px) {
+  .side-space {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+
 @media (max-width: 550px) {
   .side-space {
     padding-left: 20px;
@@ -122,8 +125,8 @@ span {
   }
 
   .section-title {
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
   }
 
   p {

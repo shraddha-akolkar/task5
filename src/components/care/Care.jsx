@@ -48,8 +48,8 @@ const Care = () => {
           </div>
 
           <div className="col-12 col-lg-6 order-2 order-lg-1">
-            <div className="row g-4 neuro-left">
-              {careData.map((item, index) => (
+<div className="row g-1 g-sm-2 g-md-3 g-lg-4 neuro-left">             
+   {careData.map((item, index) => (
                 <div className="col-12 col-sm-6" key={index}>
                   <div className="card-box">
                     <img src={item.icon} alt="" />

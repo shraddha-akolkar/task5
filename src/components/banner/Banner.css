@@ -39,7 +39,7 @@
   background: var(--red);
   color: #fff;
   border: none;
-  padding: 12px 25px;
+  padding: 7px 15px;
   border-radius: 6px;
   font-family: 'Figtree';
   font-weight: 500;
@@ -48,30 +48,49 @@
 
 @media (max-width: 768px) {
 
-  .banner {
-    min-height: 420px;
-    padding-bottom: 40px;
-    align-items: center;
-    text-align: center;
-     transform: scaleX(-1);
-  
-  }
+.banner {
+  height: 590px;
 
-  .banner-content {
-    margin: 0 auto;
-    transform: scaleX(-1)
-  }
+  background:
+    url("../../assets/images/bannerbg.webp") no-repeat center top,
+    linear-gradient(180deg, #eaf7ff 0%, #f8fcff 100%);
+
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-start; /* 🔥 move content UP */
+
+  padding-top: 90px;  /* 🔥 control top space */
+  /* padding-bottom: 20px; */
+
+  text-align: center;
+}
+
+.banner-content {
+  margin: 0 auto;
+  max-width: 100%;
+
+  margin-top: 20px; /* small push down if needed */
+}
 
   .banner-content h1 {
-    font-size: 32px;
+    font-size: 35px;
+    margin-bottom: 0;
+    padding-top: 20px;
   }
 
   .banner-content p {
-    font-size: 16px;
+    font-size: 20px;
+    padding: 0;
+
   }
 
+  /* ✅ CENTER BUTTON (key fix) */
   .banner-content button {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px 20px;
   }
 }
 

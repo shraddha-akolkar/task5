@@ -1,7 +1,11 @@
 .experts {
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
 }
 
+.location-text{
+  color: #c2202d;
+  margin-top: 30px;
+}
 
 .experts-wrapper {
   position: relative;
@@ -45,7 +49,9 @@
  
 }
 
-
+.swiper-slide:nth-child(even) .consult-btn {
+  background: #1581b9; 
+}
 .expert-card h4 {
   margin-top: 12px;
   font-size: 18px;

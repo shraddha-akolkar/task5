@@ -73,21 +73,25 @@ export default function FAQAccordion() {
           Frequently Asked <span>Questions</span>
         </h2>
 
-        <div className="faq-grid">
+        <div>
 
-          <div className="faq-col">
-            {leftFaqs.map((faq, i) => (
-              <FAQItem key={i} faq={faq} />
-            ))}
-          </div>
+  <div className="row g-4">
 
-          <div className="faq-col">
-            {rightFaqs.map((faq, i) => (
-              <FAQItem key={i} faq={faq} />
-            ))}
-          </div>
+    <div className="col-12 col-md-6">
+      {leftFaqs.map((faq, i) => (
+        <FAQItem key={i} faq={faq} />
+      ))}
+    </div>
 
-        </div>
+    <div className="col-12 col-md-6">
+      {rightFaqs.map((faq, i) => (
+        <FAQItem key={i} faq={faq} />
+      ))}
+    </div>
+
+  </div>
+
+</div>
 
       </div>
     </section>

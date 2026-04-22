@@ -64,7 +64,7 @@ const Conditions = () => {
     <section className="conditions section-space side-space">
       <div>
 
-        <h2 className="section-title text-center mb-5">
+        <h2 className="section-title text-center">
           <span>Neurology</span> Conditions We Treat
         </h2>
 
@@ -79,10 +79,10 @@ const Conditions = () => {
             modules={[Navigation]}
             loop={true}
             spaceBetween={2}
-            slidesPerView={1.3}
+            slidesPerView={1}
             breakpoints={{
-              576: { slidesPerView: 2 },
-              768: { slidesPerView: 3 },
+              576: { slidesPerView: 1 },
+              768: { slidesPerView: 1 },
               992: { slidesPerView: 4 },
               1200: { slidesPerView: 5 },
             }}

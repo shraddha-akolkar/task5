@@ -4,23 +4,23 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
- <footer className="footer side-space section-space">
-  <div>
+<footer className="footer section-space">
+  <div className="side-space">
 
     <div className="row align-items-center gy-2">
 
-  
-      <div className="col-12 col-md-6">
-        <p className="footer-left mb-0 text-center text-md-start">
+     
+      <div className="col-12 col-lg-6 text-center text-lg-start">
+        <p className="footer-left mb-0">
           Copyright {new Date().getFullYear()}, All Rights Reserved with Sahyadri Hospitals, Pune.
         </p>
       </div>
 
      
-      <div className="col-12 col-md-6">
-        <div className="footer-right text-center text-md-end">
+      <div className="col-12 col-lg-6 text-center text-lg-end">
+        <div className="footer-right">
           <a href="#">Privacy Policy</a>
-          <span className="divider">|</span>
+          <span className="divider"> | </span>
           <a href="#">Medical Disclaimer</a>
         </div>
       </div>

@@ -63,6 +63,7 @@
 .card-box p {
   font-size: 14px;
   line-height: 1.6;
+  
 }
 
 
@@ -74,6 +75,8 @@
 
 .sub{
   margin-bottom: 0;
+  font-family: 'Figtree';
+
 }
 
 .care-heading{
@@ -100,6 +103,7 @@ font-weight: 700;
 
   .card-box {
     text-align: center;
+    gap: 0 !important;
   }
 
   .neuro-right {
@@ -109,4 +113,36 @@ font-weight: 700;
   .neuro-right img {
     max-height: 220px;    
   }
+
+  .care-heading{
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .neuro-left {
+    row-gap: 8px !important;
+    column-gap: 8px !important;
+  }
+
+   .card-box {
+    padding: 14px; /* ↓ from 20px */
+  }
+
+   .card-box h4 {
+    margin: 6px 0;
+    font-size: 15px;
+  }
+
+  .card-box p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+    .card-box img {
+    height: 32px;
+    margin-bottom: 6px;
+  }
+
 }
