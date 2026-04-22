@@ -1,0 +1,120 @@
+.conditions {
+  background: #f7f7f7;
+}
+
+
+.conditions-wrapper {
+  position: relative;
+}
+
+
+.condition-card {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.condition-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 16px;
+  color: #fff;
+
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
+}
+
+
+.overlay-content {
+  transform: translateY(40px);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.overlay h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.desc {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+
+  transition:
+    opacity 0.3s ease 0.1s,
+    max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.desc p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.condition-card:hover .overlay-content {
+  transform: translateY(0);
+}
+
+.condition-card:hover .desc {
+  opacity: 1;
+  max-height: 200px;
+}
+
+
+.swiper-slide-active .condition-card {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  overflow: hidden;
+}
+
+
+.swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide .condition-card {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
+}
+
+
+
+
+.nav-btn {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.nav-btn.left {
+  left: -10px;
+}
+
+.nav-btn.right {
+  right: -10px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+}

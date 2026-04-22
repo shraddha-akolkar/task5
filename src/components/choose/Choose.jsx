@@ -5,7 +5,7 @@ import dr1 from "../../assets/images/chooseimg1.webp";
 const Choose = () => {
   return (
     <section className="choose section-space side-space">
-      <div>
+      <div className="container-fluid ">
 
         <div className="choose-wrapper">
 

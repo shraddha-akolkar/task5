@@ -1,0 +1,111 @@
+.experts {
+  background: #f7f7f7;
+}
+
+
+.experts-wrapper {
+  position: relative;
+  
+}
+
+
+.expert-card {
+  text-align: left;
+}
+
+
+.expert-img {
+  position: relative;
+  border-radius: 16px;
+   overflow: visible;
+
+
+}
+
+.expert-img img {
+  width: 100%;
+  height:  283px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+
+.consult-btn {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+
+  background: var(--red);
+  color: #fff;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 55%;
+  font-size: 15px;
+  cursor: pointer;
+ 
+}
+
+
+.expert-card h4 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.expert-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.nav-btn {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.nav-btn span{
+     display: flex;
+      transform: rotate(180deg);
+}
+
+.nav-btn.left {
+  left: -10px;
+ 
+}
+
+.nav-btn.right {
+  right: -10px;
+ 
+
+
+}
+
+@media (max-width: 1024px) {
+  .experts-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+      .experts-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-btn {
+    display: none;
+  }
+
+  .expert-img img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experts-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

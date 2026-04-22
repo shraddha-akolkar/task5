@@ -26,7 +26,7 @@ const Location = () => {
 
   return (
     <section className="location section-space side-space">
-  <div>
+  <div className="container-fluid ">
 
     <h2 className="section-title text-center mb-4">
       <span>Sahyadri</span> Neurology Care Locations
@@ -76,7 +76,7 @@ const Location = () => {
         </Swiper>
 
         <button className="nav-btn right" ref={nextRef} aria-label="Next">
-          <span style={{ display: "flex", transform: "rotate(180deg)" }}>
+          <span>
             <SideArrow />
           </span>
         </button>

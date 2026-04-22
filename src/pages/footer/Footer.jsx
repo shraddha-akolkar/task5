@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
  <footer className="footer side-space section-space">
-  <div>
+  <div className="container-fluid ">
 
     <div className="row align-items-center gy-2">
 

@@ -34,7 +34,7 @@ const careData = [
 const Care = () => {
   return (
     <section className="neuro section-space side-space">
-      <div >
+      <div className="container-fluid">
         <div className="row g-4">
 
           <div className="col-12 col-lg-6 order-1 order-lg-2 neuro-right text-center text-lg-start">

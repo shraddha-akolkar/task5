@@ -1,10 +1,10 @@
-
+/* ─── DEFAULT (floating card at top) ──────────────────────────────────────── */
 .navbar-wrapper {
   position: fixed;
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(90% - 48px);   
+  width: calc(100% - 120px);
   max-width: 1320px;
 
   background: #f2f2f2;
@@ -13,6 +13,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
   z-index: 1000;
+  overflow: hidden; /* keeps mobile dropdown inside rounded card */
 
   transition:
     top 0.35s ease,
@@ -22,14 +23,13 @@
     padding 0.35s ease;
 }
 
-
+/* ─── SCROLLED (full-width sticky) ─────────────────────────────────────────── */
 .navbar-wrapper.navbar-sticky {
   top: 0;
   left: 0;
   transform: none;
   width: 100%;
   max-width: 100%;
-
   border-radius: 0;
   padding: 10px 0;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
@@ -37,12 +37,12 @@
   padding-right: 80px;
 }
 
-
+/* ─── Logo ───────────────────────────────────────────────────────────────── */
 .nav-logo {
-  height: 80px;
+  height: 70px;
 }
 
-
+/* ─── Desktop Menu ───────────────────────────────────────────────────────── */
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -58,17 +58,22 @@
   font-family: 'Figtree', sans-serif;
   font-weight: 400;
   color: #333;
+  transition: color 0.2s;
+}
+
+.nav-menu li:hover {
+  color: var(--red, #d32f2f);
 }
 
 .nav-menu .active {
-  color: var(--red);
+  color: var(--red, #d32f2f);
 }
 
-
+/* ─── Desktop Buttons ────────────────────────────────────────────────────── */
 .nav-actions {
   display: flex;
   justify-content: flex-end;
-  gap: 15px;
+  gap: 12px;
 }
 
 .book-btnn {
@@ -109,23 +114,111 @@
   border-color: #d32f2f;
 }
 
+/* ─── Hamburger Button ───────────────────────────────────────────────────── */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background: #333;
+  border-radius: 4px;
+  transform-origin: center;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+}
+
+/* Animate to × when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* ─── Mobile Dropdown ────────────────────────────────────────────────────── */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 16px;
+}
+
+.mobile-menu--open {
+  max-height: 400px;
+  padding: 12px 16px 16px;
+}
+
+.mobile-nav-menu {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+}
+
+.mobile-nav-menu li {
+  padding: 10px 0;
+  font-size: 15px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: color 0.2s;
+}
+
+.mobile-nav-menu li:hover,
+.mobile-nav-menu li.active {
+  color: var(--red, #d32f2f);
+}
+
+.mobile-nav-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-nav-actions .book-btnn,
+.mobile-nav-actions .call-btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 992px) {
   .navbar-wrapper {
-    width: calc(100% - 32px);
+    width: calc(100% - 80px);
   }
 
   .navbar-wrapper.navbar-sticky {
     width: 100%;
+      padding-left:20px;
+  padding-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-wrapper {
+    width: calc(100% - 32px);
   }
 
-  .nav-actions {
-    justify-content: flex-end;
-  }
-
-  .book-btnn,
-  .call-btn {
-    padding: 8px 12px;
-    font-size: 14px;
+  .nav-logo {
+    height: 55px;
   }
 }

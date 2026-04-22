@@ -1,114 +1,137 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
---blue-color: #1581b9;
---red: #c2202d;
---black: #242424;
-
+:root {
+  --blue-color: #1581b9;
+  --red: #c2202d;
+  --black: #242424;
 }
+
 
 @font-face {
   font-family: 'Figtree';
   src: url('./assets/fonts/Figtree-Light.ttf') format('truetype');
   font-weight: 300;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Figtree';
   src: url('./assets/fonts/Figtree-Regular.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Figtree';
   src: url('./assets/fonts/Figtree-Medium.ttf') format('truetype');
   font-weight: 500;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Figtree';
   src: url('./assets/fonts/Figtree-SemiBold.ttf') format('truetype');
   font-weight: 600;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Figtree';
   src: url('./assets/fonts/Figtree-Bold.ttf') format('truetype');
   font-weight: 700;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Figtree';
   src: url('./assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
   font-weight: 800;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Figtree';
   src: url('../assets/fonts/Figtree-Black.ttf') format('truetype');
   font-weight: 900;
-  font-style: normal;
 }
 
-.side-space{
+
+.side-space {
   padding-left: 80px;
   padding-right: 80px;
 }
 
-.section-space{
+.section-space {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 
-.section-title{
+.section-title {
   font-family: 'Figtree';
-font-weight: 700;
+  font-weight: 700;
   font-size: 30px;
   margin-bottom: 25px;
 }
 
-p{
+p {
   font-size: 15px;
-  color: #242424;
+  color: var(--black);
+  line-height: 1.6;
 }
 
-
-span{
-  color: #1581b9;
-}
-
-
-@media(max-width:552px){
- .side-space{
-  padding-left: 5px;
-  padding-right: 5px;
+span {
+  color: var(--blue-color);
 }
 
 
 
-.section-title{
-  font-family: 'Figtree';
-font-weight: 700;
-  font-size: 30px;
-  /* margin-bottom: 0; */
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .side-space {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
+
+@media (max-width: 767px) {
+  .side-space {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .side-space {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
 }
 
 
-@media(max-width:768px){
- .side-space{
-  /* padding-left: 30px;
-  padding-right: 30px; */
-}
+@media (max-width: 550px) {
+  .side-space {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .section-space {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
