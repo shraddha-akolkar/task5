@@ -1,66 +1,62 @@
-.neuro{
-    background-color: #c5cae940;
-
+.neuro {
+  background-color: #c5cae940;
 }
 
 .neuro-left {
   position: relative;
 }
 
-.neuro-left::before {
+.neuro-left::before,
+.neuro-left::after {
   content: "";
   position: absolute;
+  background: radial-gradient(50% 50% at 50% 50%, #1581b9 0, transparent 100%);
+}
+
+.neuro-left::before {
   width: 2px;
   height: 100%;
-background: radial-gradient(50% 50% at 50% 50%, #1581b9 0, #d9d9d900 100%);;
-  left: 50.9%;
-  top: 0;
+  left: 50%;
   transform: translateX(-50%);
 }
 
 .neuro-left::after {
-  content: "";
-  position: absolute;
   height: 2px;
   width: 100%;
-background: radial-gradient(50% 50% at 50% 50%, #1581b9 0, #d9d9d900 100%);;
   top: 51.5%;
-  left: 0;
   transform: translateY(-50%);
 }
 
 .center-dot {
   position: absolute;
-    width: 21px;
-    height: 21px;
-    background: var(--blue-color);
-    border-radius: 100%;
-    top: 48%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+  width: 20px;
+  height: 20px;
+  background: var(--blue-color);
+  border-radius: 50%;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
-
-
 
 .card-box {
   background: #fff;
-  padding: 25px 25px;
+  padding: 20px;
   border-radius: 14px;
   text-align: center;
   height: 100%;
-  width: 260px;
- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.neuro-left .col-6 {
-  /* width: 50%; */
+.card-box img {
+  height: 40px;
+  margin-bottom: 10px;
 }
 
 .card-box h4 {
   font-family: 'Figtree';
-  font-weight: 600;
+  font-weight: 700;
   margin: 10px 0;
 }
 
@@ -68,19 +64,49 @@ background: radial-gradient(50% 50% at 50% 50%, #1581b9 0, #d9d9d900 100%);;
   font-size: 14px;
   line-height: 1.6;
 }
-.neuro-right h2 {
-  font-size: 30px;
-  font-weight: 600;
+
+
+.neuro-right {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.sub{
   margin-bottom: 0;
 }
 
-.neuro-right .sub {
-  margin-bottom: 20px;
-  font-weight: 500;
-}
+.care-heading{
+    font-family: 'Figtree';
+font-weight: 700;
+  font-size: 30px;
 
+}
 .neuro-right img {
   width: 100%;
-  height: 89%;
+  height: 90%;       
+  object-fit: cover;
   border-radius: 15px;
+  margin-top: 16px;
+}
+
+
+@media (max-width: 992px) {
+  .neuro-left::before,
+  .neuro-left::after,
+  .center-dot {
+    display: none;
+  }
+
+  .card-box {
+    text-align: center;
+  }
+
+  .neuro-right {
+    align-items: center;
+  }
+
+  .neuro-right img {
+    max-height: 220px;    
+  }
 }

@@ -1,8 +1,8 @@
+
 .choose-wrapper {
   display: flex;
+  gap: 30px;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 
@@ -10,52 +10,40 @@
   flex: 2;
 }
 
-.left-section h2 {
-  font-family: 'Figtree';
-  font-weight: 600;
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.left-section p {
-  margin-bottom: 10px;
+.choose-left-section p {
   font-size: 15px;
+  margin-bottom: 12px;
+  color: #444;
 }
 
-ul{
-  text-align: left;
-  padding-left: 20px;
-color: #1581b9;
-font-weight: 400;
 
-}
+.choose-list {
+  padding-left: 18px;
+  margin: 15px 0;
 
-.two-col-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px 90px;
-}
+  gap: 10px 40px;
 
+  color: #1581b9;
+}
 
 .choose-btn {
-  margin-top: 20px;
+  margin-top: 15px;
   background: var(--red);
   color: #fff;
-  border: none;
-  padding: 12px 25px;
+  border: 1px solid transparent;
+  padding: 12px 24px;
   border-radius: 6px;
-  font-family: 'Figtree';
-   border: 1px solid transparent; 
-  transition: border-color 0.3s ease;
+  font-family: "Figtree";
+  transition: 0.3s ease;
 }
 
-.choose-btn:hover{
-    background-color: #fff;
-    color: var(--red);
-    border-color: var(--red);
-    /* border-radius: 2px solid black; */
+.choose-btn:hover {
+  background: #fff;
+  color: var(--red);
+  border-color: var(--red);
 }
-
 
 .right-section {
   flex: 1;
@@ -63,9 +51,48 @@ font-weight: 400;
 }
 
 .right-section img {
-height: 100%;
-    width: 102%;
-    object-fit: cover;
-  /* max-width: 350px; */
+  width: 100%;
+  max-width: 350px;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+.mobile-img {
+  display: none;
+}
+
+
+@media (max-width: 991px) {
+  .choose-wrapper {
+    flex-direction: column;
+  }
+
+  .right-section {
+    display: none; 
+  }
+
+  .mobile-img {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .mobile-img img {
+    width: 70%;
+    max-width: 250px;
+    border-radius: 50%;
+  }
+
+  .choose-left-section {
+    text-align: center;
+  }
+
+ .choose-list {
+    grid-template-columns: repeat(2, 1fr);  
+    column-gap: 60px;
+  }
+
+  .choose-btn {
+    width: 100%;
+  }
 }

@@ -25,12 +25,14 @@ const Location = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="location section-space side-space">
-      <h2 className="section-title text-center">
-        <span>Sahyadri</span> Neurology Care Locations
-      </h2>
+    <section className="location section-space side-space">
+  <div>
 
-      <div className="location-wrapper">
+    <h2 className="section-title text-center mb-4">
+      <span>Sahyadri</span> Neurology Care Locations
+    </h2>
+
+    <div className="location-wrapper">
 
         <button className="nav-btn left" ref={prevRef} aria-label="Previous">
           <SideArrow />
@@ -38,10 +40,7 @@ const Location = () => {
 
         <Swiper
           modules={[Navigation]}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
+         
           onSwiper={(swiper) => {
             setTimeout(() => {
               if (!swiper || swiper.destroyed) return;
@@ -84,6 +83,7 @@ const Location = () => {
 
       </div>
     </div>
+   </section>
   );
 };
 

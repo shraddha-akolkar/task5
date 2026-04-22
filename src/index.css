@@ -87,3 +87,28 @@ p{
 span{
   color: #1581b9;
 }
+
+
+@media(max-width:552px){
+ .side-space{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+.section-title{
+  font-family: 'Figtree';
+font-weight: 700;
+  font-size: 30px;
+  /* margin-bottom: 0; */
+}
+}
+
+
+@media(max-width:768px){
+ .side-space{
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+}

@@ -4,10 +4,11 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <section className="banner side-space">
-      <div className="container-fluid">
+      <div className="container-fluid ">
+
         <div className="row align-items-center banner-row">
 
-          <div className="left-section">
+            <div className="col-12 col-lg-6">
             <div className="banner-content">
               <h1>
                 Welcome To <span>Sahyadri</span>
@@ -21,7 +22,11 @@ const Banner = () => {
             </div>
           </div>
 
+         
+          <div className="col-lg-6 d-none d-lg-block"></div>
+
         </div>
+
       </div>
     </section>
   );
