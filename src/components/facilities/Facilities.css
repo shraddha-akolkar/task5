@@ -279,6 +279,7 @@
   }
   .facilities-slider {
     display: block !important;
+    margin-top: 8px;
   }
 
   .facilities-mobile-img {
@@ -288,18 +289,19 @@
   .facilities-mobile-img .facilities-img-wrap {
     min-height: 380px;
     align-items: flex-end;
+    margin-bottom: -30px;
   }
 
   .facilities-mobile-img .facilities-img-wrap::before {
     width: 360px;
     height: 360px;
-    top: 20px;
+    top: 72px;
   }
 
   .facilities-mobile-img .facilities-img {
     max-width: 420px;
     max-height: 360px;
-    margin-top: 54px;
+    margin-top: 20px;
   }
 }
  @media (max-width: 1024px) {
@@ -373,10 +375,10 @@
 
 @media (max-width: 767px) {
   .facilities-row {
-    display: none !important; /* Hide desktop view */
+    display: none !important; 
   }
   .facilities-slider {
-    display: block !important; /* Show slider */
+    display: block !important;
   }
 
   .facilities-mobile-img .facilities-img-wrap {

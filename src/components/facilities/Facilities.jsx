@@ -97,7 +97,7 @@ const Facilities = () => {
     <Swiper
       modules={[Navigation]}
       loop={true}
-      spaceBetween={16}
+      spaceBetween={2}
       slidesPerView={1}
       breakpoints={{
         576: { slidesPerView: 1.2 },
