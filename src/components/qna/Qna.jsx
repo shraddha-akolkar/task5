@@ -5,7 +5,7 @@ const defaultFaqs = [
     a: "Individuals with neurological symptoms such as chronic headaches, seizures, dizziness, numbness, weakness, memory issues, or movement disorders may need a neurologist." },
 
   { q: "How long does recovery take for neurological conditions?", 
-    a: "Recovery varies widely by condition and individual..." },
+    a: "Recovery varies widely by condition and individual" },
 
   { q: "What conditions does neurology treat?", 
     a: "Neurology treats conditions like strokes, epilepsy, Alzheimer's disease, Parkinson's disease, multiple sclerosis, migraines, and neuropathy" },
