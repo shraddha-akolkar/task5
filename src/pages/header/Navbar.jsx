@@ -9,6 +9,9 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(
+    typeof window !== "undefined" ? window.innerWidth > 1024 : true
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +19,19 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const desktopView = window.innerWidth > 1024;
+      setIsDesktop(desktopView);
+      if (desktopView) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -30,59 +46,65 @@ const Navbar = () => {
             </div>
 
          
-            <div className="col-lg-5 d-none d-lg-block">
-              <ul className="nav-menu">
-                <li><a href="#appointment">Appointment</a></li>
-                <li><a href="#treatments">Treatments</a></li>
-                <li><a href="#doctors">Doctors</a></li>
-                <li><a href="#why-us">Why Us?</a></li>
-              </ul>
-            </div>
+            {isDesktop && (
+              <div className="col-lg-5">
+                <ul className="nav-menu">
+                  <li><a href="#appointment">Appointment</a></li>
+                  <li><a href="#treatments">Treatments</a></li>
+                  <li><a href="#doctors">Doctors</a></li>
+                  <li><a href="#why-us">Why Us?</a></li>
+                </ul>
+              </div>
+            )}
 
           
-            <div className="col-lg-4 d-none d-lg-block">
-              <div className="nav-actions">
+            {isDesktop && (
+              <div className="col-lg-4 ms-lg-auto">
+                <div className="nav-actions">
+                  <button
+                    className="book-btnn"
+                    onClick={() => setShowModal(true)}
+                  >
+                    <Calender /> Book Appointment
+                  </button>
+
+                  <button className="call-btn">
+                    <Phone /> Call Now
+                  </button>
+                </div>
+              </div>
+            )}
+
+        
+            {!isDesktop && (
+              <div className="col-6 ms-auto d-flex justify-content-end align-items-center gap-2">
                 <button
                   className="book-btnn"
                   onClick={() => setShowModal(true)}
                 >
-                  <Calender /> Book Appointment
+                  <Calender /><span>Book</span>
                 </button>
 
                 <button className="call-btn">
-                  <Phone /> Call Now
+                  <Phone />
+                </button>
+
+                <button
+                  className={`hamburger ${menuOpen ? "open" : ""}`}
+                  onClick={() => setMenuOpen(!menuOpen)}
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </button>
               </div>
-            </div>
-
-        
-            <div className="col-6 d-lg-none d-flex justify-content-end align-items-center gap-2">
-              <button
-                className="book-btnn"
-                onClick={() => setShowModal(true)}
-              >
-                <Calender /><span>Book</span>
-              </button>
-
-              <button className="call-btn">
-                <Phone />
-              </button>
-
-              <button
-                className={`hamburger ${menuOpen ? "open" : ""}`}
-                onClick={() => setMenuOpen(!menuOpen)}
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
+            )}
 
           </div>
         </div>
 
    
-        <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""}`}>
+        <div className={`mobile-menu ${!isDesktop && menuOpen ? "mobile-menu--open" : ""}`}>
           <ul className="mobile-nav-menu">
             <li onClick={() => setMenuOpen(false)}>Appointment</li>
             <li onClick={() => setMenuOpen(false)}>Treatments</li>

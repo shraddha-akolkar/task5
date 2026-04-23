@@ -6,6 +6,16 @@
   height: 80%;
 }
 
+.pillar-card::before{
+      background: linear-gradient(180deg, #4b4ba800, #1581b9);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 28%;
+    width: 100%;
+}
+
+
 
 .pillar-card img {
   width: 100%;

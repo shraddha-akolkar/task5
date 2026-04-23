@@ -46,15 +46,12 @@ const Facilities = () => {
   return (
     <section className="facilities side-space">
       <div>
-        <h2 className="section-title facilities-heading text-center">
-          <span className="facilities-heading-accent">Neurology treatments</span>{" "}
-          <span className="facilities-heading-dark">facilities</span>
+         <h2 className="section-title text-center">
+          <span>Neurology treatments </span> facilities
         </h2>
 
     
-        <div className="row facilities-row position-relative d-none d-lg-flex">
-     
-          <div className="col-md-6 col-lg-4 facilities-col-side left-side">            {dataLeft.map((item, i) => (
+<div className="row facilities-row position-relative align-items-stretch"><div className="col-4 facilities-col-side left-side">              {dataLeft.map((item, i) => (
             <div className={`facility-card ${i === 1 ? 'move-inward' : ''}`} key={i}>
               <img src={item.icon} alt="" className="facility-card-icon" />
               <h4 className="text-center">{item.title}</h4>
@@ -64,14 +61,14 @@ const Facilities = () => {
           </div>
 
          
-          <div className="col-md-4 facilities-center-col">
-            <div className="facilities-img-wrap">
-              <img src={fact} alt="Doctor" className="facilities-img" />
-            </div>
-          </div>
+<div className="col-lg-4 facilities-center-col">
+    <div className="facilities-img-wrap">
+      <img src={fact} alt="Doctor" className="facilities-img" />
+    </div>
+  </div>
 
       
-          <div className="col-md-6 col-lg-4 facilities-col-side right-side">            {dataRight.map((item, i) => (
+<div className="col-4 facilities-col-side right-side">              {dataRight.map((item, i) => (
             <div className={`facility-card ${i === 1 ? 'move-inward' : ''}`} key={i}>
               <img src={item.icon} alt="" className="facility-card-icon" />
               <h4 className="text-center">{item.title}</h4>
@@ -83,8 +80,7 @@ const Facilities = () => {
         </div>
 
        
-  <div className="facilities-slider d-lg-none">
-
+<div className="facilities-slider">
   <div className="facilities-mobile-img">
     <div className="facilities-img-wrap">
       <img src={fact} alt="Doctor" className="facilities-img" />
