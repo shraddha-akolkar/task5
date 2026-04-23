@@ -12,12 +12,7 @@ const locations = [
   { name: "Nashik", img: img1 },
   // { name: "Pune", img: img1 },
   // { name: "Aurangabad", img: img1 },
-  // { name: "Kolhapur", img: img1 },
-  // { name: "Karad", img: img1 },
-  // { name: "Pune", img: img1 },
-  // { name: "Aurangabad", img: img1 },
-  // { name: "Kolhapur", img: img1 },
-  // { name: "Karad", img: img1 },
+
 ];
 
 const Location = () => {

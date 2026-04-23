@@ -2,8 +2,7 @@
   min-height: 490px;
 
   background:
-    url("../../assets/images/banner.webp") no-repeat right bottom,
-    linear-gradient(90deg, #eaf7ff 0%, #f8fcff 50%, #edf8ff 100%);
+    url("../../assets/images/banner.webp") no-repeat right bottom;
 
   background-size: cover;
 
@@ -52,8 +51,7 @@
   height: 590px;
 
   background:
-    url("../../assets/images/bannerbg.webp") no-repeat center top,
-    linear-gradient(180deg, #eaf7ff 0%, #f8fcff 100%);
+    url("../../assets/images/bannerbg.webp") no-repeat center top;
 
   background-size: cover;
 
@@ -92,7 +90,14 @@
     margin: 0 auto;
     width: auto;
     padding: 10px 20px;
+  border: 1px solid transparent !important;
    
+  }
+
+  .banner-content button:hover {
+     background: #fff;
+  color: #d32f2f;
+  border-color: #d32f2f;
   }
 }
 

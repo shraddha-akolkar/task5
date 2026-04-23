@@ -27,7 +27,10 @@ const BookNow = () => {
             <select className="form-control">
               <option>Select Doctor</option>
               <option>Dr. Shripal Shah</option>
-              <option>Dr. ABC</option>
+              <option>Dr. Dhananjay Duberkar</option>
+              <option>Dr. Sumant Biyani</option>
+              <option>Dr. Amit Yeole</option>
+             
             </select>
 
           </div>
