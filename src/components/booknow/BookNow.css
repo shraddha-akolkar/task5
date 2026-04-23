@@ -13,7 +13,7 @@
   color: #fff;
 }
 
-/* 🔥 CUSTOM FLEX LAYOUT */
+
 .input-fields {
   display: flex;
   gap: 20px;
@@ -23,13 +23,13 @@
   margin-right: 30px;
 }
 
-/* Each field width */
+
 .input-fields .form-control {
   width: 23%;
   width: 220px;
 }
 
-/* Input styling */
+
 .form-control {
   height: 45px;
   border-radius: 8px;
@@ -46,7 +46,7 @@
   box-shadow: none;
 }
 
-/* Custom select arrow */
+
 select.form-control {
   appearance: none;
   -webkit-appearance: none;
@@ -58,7 +58,7 @@ select.form-control {
   background-size: 16px;
 }
 
-/* Button */
+
 .book-btn {
   height: 45px;
   padding: 10px 15px;
@@ -76,7 +76,7 @@ select.form-control {
   color: #fff;
 }
 
-/* ✅ Responsive */
+
 @media (max-width: 992px) {
   .input-fields .form-control {
     width: 48%;

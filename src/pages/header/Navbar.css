@@ -201,11 +201,17 @@
 
 .mobile-nav-actions .book-btnn,
 .mobile-nav-actions .call-btn {
-  width: 100%;
-  text-align: center;
-  border-radius: 8px;
+display: none;
+}
+.hamburger {
+  width: 35px;
+  height: 35px;
+  gap: 4px;
 }
 
+.hamburger span {
+  height: 2px;
+}
 
 
 
@@ -219,9 +225,43 @@
       padding-left:20px;
   padding-right: 20px;
   }
+
+  .book-btnn svg,
+  .call-btn svg {
+    display: block;
+    height: 18px;
+    width: 18px;
+    
+  }
+
+   .book-btnn,
+  .call-btn {
+    background: transparent;
+    border: none;
+    padding: 4px;
+  }
+
+
   .book-btnn svg {
-  height: 16px;
-  width: 16px;
+    color: #1e88e5;
+      height: 20px;  
+    width: 20px;
+  }
+
+ 
+   .call-btn svg {
+    color: #d32f2f;
+    height: 20px; 
+    width: 20px;
+  }
+
+  .book-btnn span,
+  .call-btn span {
+    display: none;
+  }
+  .nav-logo {
+  height: 50px !important;
+  
 }
 }
 

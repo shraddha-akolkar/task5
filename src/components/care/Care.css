@@ -1,5 +1,6 @@
 .neuro {
   background-color: #c5cae940;
+  margin-top: 30px;
 }
 
 .neuro-left {
@@ -130,7 +131,7 @@ font-size: 15px;
 
 }
    .card-box {
-    padding: 14px; /* ↓ from 20px */
+    padding: 14px; 
   }
 
    .card-box h4 {

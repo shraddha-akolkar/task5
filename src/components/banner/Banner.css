@@ -58,9 +58,9 @@
   background-size: cover;
 
   display: flex;
-  align-items: flex-start; /* 🔥 move content UP */
+  align-items: flex-start; 
 
-  padding-top: 90px;  /* 🔥 control top space */
+  padding-top: 90px;  
   /* padding-bottom: 20px; */
 
   text-align: center;
@@ -70,7 +70,7 @@
   margin: 0 auto;
   max-width: 100%;
 
-  margin-top: 50px; /* small push down if needed */
+  margin-top: 50px; 
 }
 
   .banner-content h1 {
@@ -86,7 +86,7 @@
  margin-bottom: 5px;
   }
 
-  /* ✅ CENTER BUTTON (key fix) */
+ 
   .banner-content button {
     display: block;
     margin: 0 auto;
@@ -102,7 +102,7 @@
   margin: 0 auto;
   max-width: 100%;
 
-  margin-top: 20px; /* small push down if needed */
+  margin-top: 20px; 
 }
  .banner-content p {
     font-size: 18px;

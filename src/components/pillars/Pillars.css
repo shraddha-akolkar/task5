@@ -69,11 +69,33 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  .pillars .row {
+    --bs-gutter-y: 1.5rem; 
+  }
 
-.overlay h4 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
+  .pillar-card {
+    height: auto; 
+    margin-bottom: 0; 
+  }
+
+  .pillar-card img {
+    height: 240px; 
+  }
 }
+
+@media (max-width: 768px) {
+  .pillars .row {
+    --bs-gutter-y: 1rem; 
+  }
+
+  
+
+  .pillar-card img {
+    height: 220px; 
+  }
+
+  .overlay h4 {
+    font-size: 18px;
+  }
 }

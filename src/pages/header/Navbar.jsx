@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="row align-items-center ">
 
         
-          <div className="col-8 col-lg-3">
+          <div className="col-6 col-lg-3">
             <img src={logo} alt="logo" className="nav-logo" />
           </div>
 
@@ -44,17 +44,19 @@ const Navbar = () => {
           </div>
 
        
-          <div className="col-4 d-lg-none d-flex justify-content-end">
-            <button
-              className={`hamburger ${menuOpen ? "open" : ""}`}
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
+          <div className="col-6 d-lg-none d-flex justify-content-end align-items-center">
+  <button className="book-btnn"><Calender /><span>Book Appointment</span></button>
+  <button className="call-btn"><Phone /><span>Call Now</span></button>
+  <button
+    className={`hamburger ${menuOpen ? "open" : ""}`}
+    onClick={() => setMenuOpen(!menuOpen)}
+    aria-label="Toggle menu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
 
         </div>
       </div>
