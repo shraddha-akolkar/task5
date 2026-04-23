@@ -64,6 +64,11 @@
   transition: color 0.2s;
 }
 
+.nav-menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-menu li:hover {
   color: var(--red, #d32f2f);
 }

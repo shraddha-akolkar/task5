@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from "../../assets/images/logo.webp";
 import Phone from "../../assets/svg/Phone";
 import Calender from "../../assets/svg/Calender";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,6 +18,7 @@ const Navbar = () => {
 
 
   return (
+    
     <header className={`navbar-wrapper ${scrolled ? "navbar-sticky" : ""}`}>
       <div>
         <div className="row align-items-center ">
@@ -27,12 +29,20 @@ const Navbar = () => {
           </div>
 
           <div className="col-lg-5 d-none d-lg-block">
-            <ul className="nav-menu">
-              <li className="active" href="#appointment">Appointment</li>
-              <li href="#treatments">Treatments</li>
-              <li href="#doctors">Doctors</li>
-              <li href="#why-us">Why Us?</li>
-            </ul>
+           <ul className="nav-menu">
+  <li>
+    <a href="#appointment">Appointment</a>
+  </li>
+  <li>
+    <a href="#treatments">Treatments</a>
+  </li>
+  <li>
+    <a href="#doctors">Doctors</a>
+  </li>
+  <li>
+    <a href="#why-us">Why Us?</a>
+  </li>
+</ul>
           </div>
 
         
@@ -44,7 +54,7 @@ const Navbar = () => {
           </div>
 
        
-          <div className="col-6 d-lg-none d-flex justify-content-end align-items-center">
+          <div className="col-6 d-lg-none d-flex justify-content-end align-items-center gap-2">
   <button className="book-btnn"><Calender /><span>Book Appointment</span></button>
   <button className="call-btn"><Phone /><span>Call Now</span></button>
   <button

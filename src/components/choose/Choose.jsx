@@ -4,7 +4,7 @@ import dr1 from "../../assets/images/chooseimg1.webp";
 
 const Choose = () => {
   return (
-    <section className="choose section-space side-space">
+    <section className="choose section-space side-space" id="why-us">
       <div>
 
         <div className="choose-wrapper">

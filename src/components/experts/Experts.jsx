@@ -45,7 +45,7 @@ const Experts = () => {
   const nextRef = useRef(null);
 
   return (
-    <section className="experts section-space side-space">
+    <section className="experts section-space side-space" id="doctors">
       <div>
 
   

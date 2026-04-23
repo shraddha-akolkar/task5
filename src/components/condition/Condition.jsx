@@ -61,7 +61,7 @@ const Conditions = () => {
   const nextRef = useRef(null);
 
   return (
-    <section className="conditions section-space side-space">
+    <section className="conditions section-space side-space" id="treatments">
       <div>
 
         <h2 className="section-title text-center">

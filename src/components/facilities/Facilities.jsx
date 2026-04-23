@@ -5,10 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules"; 
 import fact from "../../assets/images/facilities.webp";
-import fact1 from "../../assets/images/care1.svg";
-import fact2 from "../../assets/images/care2.svg";
-import fact3 from "../../assets/images/care3.svg";
-import fact4 from "../../assets/images/care4.svg";
+import fact1 from "../../assets/images/fact1.svg";
+import fact2 from "../../assets/images/fact2.svg";
+import fact3 from "../../assets/images/fact3.svg";
+import fact4 from "../../assets/images/fact4.svg";
 import SideArrow from "../../assets/svg/SideArrow";
 
 const dataLeft = [
@@ -73,7 +73,7 @@ const Facilities = () => {
       
           <div className="col-md-6 col-lg-4 facilities-col-side right-side">            {dataRight.map((item, i) => (
             <div className={`facility-card ${i === 1 ? 'move-inward' : ''}`} key={i}>
-              <img src={item.icon} alt="" />
+              <img src={item.icon} alt="" className="facility-card-icon" />
               <h4 className="text-center">{item.title}</h4>
               <p>{item.desc}</p>
             </div>
@@ -122,7 +122,7 @@ const Facilities = () => {
       {[...dataLeft, ...dataRight].map((item, i) => (
         <SwiperSlide key={i}>
           <div className="facility-card">
-            <img src={item.icon} alt="" />
+            <img src={item.icon} alt="" className="facility-card-icon"/>
             <h4>{item.title}</h4>
             <p>{item.desc}</p>
           </div>
